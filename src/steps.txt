@@ -1,0 +1,11 @@
+1. npx create-react-app chat-app --template redux
+2.firebase set up
+3.remove counterslice from counter into features
+4.yarn add react-router-dom  
+5.yarn add @material-ui/core   
+6.yarn add @material-ui/icons
+7.npm install --save styled-components
+8.copy stuff from react-router site into app.js
+9. delete useless files
+10.create Header.js
+
