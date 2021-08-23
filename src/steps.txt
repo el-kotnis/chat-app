@@ -1,3 +1,15 @@
+GitHUB:
+1.Open project
+2.git init
+3.git add .
+4.git remote add origin repository_github_link
+5.git commit -m "message"
+6.git push origin master
+7.git status (check unadded new files)
+8.git add filename
+9.git commit -m "message after adding file"
+
+Chat-app:
 1. npx create-react-app chat-app --template redux
 2.firebase set up
 3.remove counterslice from counter into features
@@ -7,5 +19,5 @@
 7.npm install --save styled-components
 8.copy stuff from react-router site into app.js
 9. delete useless files
-10.create Header.js
+10.create Header.js, add elements of the header tab
 
