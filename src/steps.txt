@@ -20,4 +20,6 @@ Chat-app:
 8.copy stuff from react-router site into app.js
 9. delete useless files
 10.create Header.js, add elements of the header tab
+11. import icons from material ui icons for header
+12.add AppBody to App.js, create Sidebar.js in components
 
