@@ -11,15 +11,20 @@ GitHUB:
 
 Chat-app:
 1. npx create-react-app chat-app --template redux
-2.firebase set up
+2.firebase set up, copy stuff into firebase.js
 3.remove counterslice from counter into features
-4.yarn add react-router-dom  
-5.yarn add @material-ui/core   
-6.yarn add @material-ui/icons
+4.npm install react-router-dom 
+5.npm install @material-ui/core   
+6.npm install @material-ui/icons
 7.npm install --save styled-components
 8.copy stuff from react-router site into app.js
 9. delete useless files
 10.create Header.js, add elements of the header tab
 11. import icons from material ui icons for header
 12.add AppBody to App.js, create Sidebar.js in components
-
+13. SidebarOption  for the options within Sidebar
+14.create functions addChannel and selectChannel in SidebarOption
+15.add new stuff to firebase.js, create new in Firestore
+16.allow google auth in authentication, add code to firebase.js
+17.create addChannel and selectChannel functions in SidebarOption 
+18.make changes to counterslice to turn it into appSlice

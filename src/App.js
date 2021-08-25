@@ -6,23 +6,26 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import styled from 'styled-components';
 
-
+import Sidebar from './components/Sidebar';
 import './App.css';
-import Header from './Header';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="app">
       <Router>
       <>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/" exact>
-            <Header/>
-          </Route>
-        </Switch>
+        <Header/>
+        <AppBody>
+          <Sidebar/>
+          <Switch>
+            <Route path="/" exact>
+              {/*Chat*/}
+            </Route>
+          </Switch>
+        </AppBody>
       </>
       </Router>
     </div>
@@ -30,3 +33,7 @@ function App() {
 }
 
 export default App;
+
+const AppBody = styled.div`
+  display: flex;
+`
