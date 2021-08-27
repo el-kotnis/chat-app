@@ -8,9 +8,9 @@ function ChatInput({channelName, channelId}) {
     const [input, setInput] = useState('')
 
     const sendMessage = (e) => {
-        e.prevenDefault() // prevents refresh
+        e.preventDefault() // prevents refresh
 
-        if(channelId){
+        if(!channelId){
             return false
         }
 
@@ -20,13 +20,14 @@ function ChatInput({channelName, channelId}) {
             user:'Abel',
             userImage:'D:\Win-Sem 21\Web Dev\chat-app\chat-app\src\images\the-weeknd-red.jpg' 
         })
+        setInput('')
     }
     return (
         <ChatInputContainer>
             <form>
                 <input value={input} 
                 onChange={(e) => setInput(e.target.value)} 
-                placeholder={`Message #ROOM`}/>
+                placeholder={`Message ${channelName}`}/>
                 <Button hidden type='submit' onClick={sendMessage}>
                     SEND
                 </Button>
