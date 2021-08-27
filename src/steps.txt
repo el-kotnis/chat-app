@@ -28,3 +28,4 @@ Chat-app:
 16.allow google auth in authentication, add code to firebase.js
 17.create addChannel and selectChannel functions in SidebarOption 
 18.make changes to counterslice to turn it into appSlice
+19.make changes to store.js
