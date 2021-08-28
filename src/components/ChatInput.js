@@ -18,7 +18,7 @@ function ChatInput({channelName, channelId}) {
             message:input,
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             user:'Abel',
-            userImage:'D:\Win-Sem 21\Web Dev\chat-app\chat-app\src\images\the-weeknd-red.jpg' 
+            userImage: 'gs://chat-app-76b1e.appspot.com/the-weeknd-red.jpg'
         })
         setInput('')
     }
