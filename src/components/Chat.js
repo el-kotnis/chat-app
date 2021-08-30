@@ -28,7 +28,9 @@ function Chat() {
 
     return (
         <ChatContainer>
-            <Header>
+            {roomDetails && roomMessages && (
+                <>
+                <Header>
                 <HeaderLeft>
                     <h4><strong>{roomDetails?.data().name}</strong></h4>
                     <StarBorderOutlinedIcon/>
@@ -55,7 +57,11 @@ function Chat() {
                 })}
             </ChatMessages>
             <ChatBottom ref={chatRef}/>
-            <ChatInput channelName={roomDetails?.data().name} channelId={roomId}/>
+            <ChatInput chatRef={chatRef} channelName={roomDetails?.data().name} channelId={roomId}/>
+        </>
+            )}
+        
+            
         </ChatContainer>
     )
 }
